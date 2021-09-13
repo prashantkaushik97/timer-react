@@ -31,6 +31,7 @@ function Timer() {
     setpause(!pause);
   };
   const handleStart = (e) => {
+    setpause(false);
     e.preventDefault();
     let tempSeconds = parseInt(minutes * 60);
     setTotalSeconds(tempSeconds + parseInt(seconds));
